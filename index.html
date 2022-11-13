@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гламурненько.Ру</title>
+    <!-- Подключение Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Fancyapps -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <script type="module">
+        import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+    </script>
+    <!-- Cтили и js-->
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="./script/main.js"></script>
+</head>
+<body id="up">
+    <header class="header">
+        <div class="container position-relative">
+            <nav class="navbar navbar-expand-lg navbar-dark header__nav p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-between" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav align-items-center mb-lg-0 mb-5 nav">
+                        <li class="nav-item mb-lg-0 mb-3 mr-lg-4 nav__item">
+                            <a class="nav-link p-0 text-uppercase nav__link" href="#">Блог <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item mb-lg-0 mb-3 mr-lg-4 nav__item">
+                            <a class="nav-link p-0 text-uppercase nav__link" href="#">Бесплатно</a>
+                        </li>
+                        <li class="nav-item mb-lg-0 mb-3 mr-lg-4 nav__item">
+                            <a class="nav-link p-0 text-uppercase nav__link" href="#">Семинары</a>
+                        </li>
+                        <li class="nav-item mb-lg-0 mb-3 mr-lg-4 nav__item">
+                            <a class="nav-link p-0 text-uppercase nav__link" href="#">Тренинги</a>
+                        </li>
+                        <li class="nav-item mb-lg-0 mb-3 mr-lg-4 nav__item">
+                            <a class="nav-link p-0 text-uppercase nav__link" href="#">Услуги</a>
+                        </li>
+                        <li class="nav-item mb-lg-0 mb-3 mr-lg-4 nav__item">
+                            <a class="nav-link p-0 text-uppercase nav__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link p-0 text-uppercase nav__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <ul class="list-unstyled d-flex justify-content-lg-end justify-content-center mb-lg-0 mb-3 social">
+                        <li class="mr-2 social__item">
+                            <a href="#" class="w-100 d-block h-100 bg social__link social__link--instagram"></a>
+                        </li>
+                        <li class="mr-2 social__item">
+                            <a href="#" class="w-100 d-block h-100 bg social__link social__link--fb"></a>
+                        </li>
+                        <li class="mr-2 social__item">
+                            <a href="#" class="w-100 d-block h-100 bg social__link social__link--vk"></a>
+                        </li>
+                    </ul>   
+                    
+                    <ul class="list-unstyled d-flex flex-column justify-content-lg-end align-items-center mb-0 phones">
+                        <li class="mb-1 phones__item">
+                            <a href="tel: +78007070513" class="d-block text-right phones__link">8(800)707-05-13</a>
+                        </li>
+                        <li class="phones__item">
+                            <a href="tel: +74993502335" class="d-block text-right phones__link">+7(499)350-23-35</a>
+                        </li>
+                    </ul>       
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero__wrapper">
+                <img src="./img/logo-new.png" alt="Glamurnenko логотип" class="mb-5">
+                <p class="text-uppercase mb-1 hero__mission">Наша миссия:</p>
+                <p class="text-uppercase hero__descr">&laquoМиллион красво одетых женщин&raquo</p>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="novelty">
+            <div class="container">
+                <div class="position-relative pt-5 d-flex flex-column align-items-center novelty__wrapper">
+                    <h2 class="text-center text-uppercase mb-5 novelty__title">Скорая стильная помощь</h2>
+                    <p class="text-center text-uppercase novelty__description">Онлайн-консультация стилиста в вашем мобильном телефоне когда вам нужно: на шоппинге, во время разбора гардероба, когда подбираете комплект, просто когда нужен совет</p>
+
+                    <figure class="figure mb-5 w-100">
+                        <img src="./img/form-reservation-bigcolor.jpg" class="figure-img img-fluid w-100" alt="Женщина в магазине с одеждой">
+                        <figcaption class="figure-caption text-center">Описание картинки</figcaption>
+                      </figure>
+
+                    <div class="w-100 text-left mb-5 goes">
+                        <h2 class="text-uppercase mb-4 novelty__title">Как все происходит</h2>
+
+                        <p class="mb-3">После оплаты мы подключаем вас в канал в Telegram с нашим стилистом</p>
+
+                        <p class="mb-3">Подключение происходит в рабочее время: ПН-ПТ с 10 до 19 МСК</p>
+
+                        <p class="mb-3">Сразу же вы можете писать свои вопросы</p>
+
+                        <p class="mb-3">Ответы будут в пределах часа в рабочее время: ПН-ПТ с 10 до 19 МСК </p>
+
+                        <p class="mb-3">Если вы не получаете ответ за 1 час мы продлеваем время действия услуги на 24 часа</p>
+
+                        <p class="mb-3">А если нужна помощь в выходной день?</p>
+
+                        <p class="pl-5 pr-5">Наптшите об этом как можно раньше, но не менее, чем за 24 часа. Получите подтваерждение стилиста. Если вы <br>  отправляетесь, к примеру,на шоппинг в выходной день и вам нужно, чтобы стилист был с вами на связи, такой вариант возможен по предварительной договоренности со <br> стилистом.</p>
+                    </div>
+
+                    <div class="w-100 pl-5 pr-5 sign-now">
+                        <table class="table table-bordered bg-transparent font-weight-bold">
+                            <thead>
+                                <tr>
+                                    <th colspan="4" class="text-center pt-4 pb-4">
+                                        <h3 class="novelty__title mb-0">Записывайтесь прямо сейчас</h3>
+                                    </th>
+                                </tr>
+
+                                <tr class="table-warning">
+                                    <th scope="col" class="text-uppercase pl-5">Вы получаете:</th>
+                                    <th scope="col" class="text-uppercase text-center" width="15%">Теория</th>
+                                    <th scope="col" class="text-uppercase text-center" width="15%">Практика</th>
+                                    <th scope="col" class="text-uppercase text-center" width="15%">VIP</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="pl-5 bg-warning">
+                                <td class="pl-5">Все материалы тренинга</td>
+                                <td class="text-center">&#10004;</td>
+                                <td class="text-center">&#10004;</td>
+                                <td class="text-center">&#10004;</td>
+                              </tr>
+                              <tr class="pl-5 bg-warning">
+                                <td class="pl-5">Проверка ДЗ</td>
+                                <td class="text-center">&#8211;</td>
+                                <td class="text-center"><span>2,5 месяца</span> имиджмейкером команды Гламурненько.ру</td>
+                                <td class="text-center"><span>2,5 месяца</span> лично Екатериной Маляровой</td>
+                              </tr>
+                              <tr class="pl-5 bg-warning">
+                                <td class="pl-5">Тренажер по стилевым типажам</td>
+                                <td class="text-center">&#8211;</td>
+                                <td class="text-center">&#10004;</td>
+                                <td class="text-center">&#10004;</td>
+                              </tr>
+                              <tr class="pl-5 bg-warning">
+                                <td class="pl-5">Тренажер по вещам и образам</td>
+                                <td class="text-center">&#8211;</td>
+                                <td class="text-center">&#10004;</td>
+                                <td class="text-center">&#10004;</td>
+                              </tr>                              
+                            </tbody>
+                            <tfoot>
+                                <tr class="table-warning">
+                                    <th scope="col" class="text-uppercase pl-5">Цена</th>
+                                    <th scope="col" class="text-uppercase text-center" width="15%">7 990 &#8381;</th>
+                                    <th scope="col" class="text-uppercase text-center" width="15%">9 990 &#8381;</th>
+                                    <th scope="col" class="text-uppercase text-center" width="15%">24 990 &#8381;</th>
+                                </tr>
+
+                                <tr class="pl-5 bg-warning">
+                                    <td></td>
+                                    <td colspan="3" class="text-center">
+                                        <button type="button" class="btn btn-outline-dark btn-sm">&#8381;</button>
+
+                                        <button type="button" class="btn btn-outline-dark btn-sm">&#8372;</button>
+
+                                        <button type="button" class="btn btn-outline-dark btn-sm">&#65284;</button>
+
+                                        <button type="button" class="btn btn-outline-dark btn-sm">&#8364;</button>
+                                    </td>
+                                  </tr>
+
+                                  <tr class="pl-5 bg-warning">
+                                    <td></td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-dark">Заказать</button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-dark">Заказать</button>
+                                    </td>
+                                    <td class="text-center">
+                                        <button type="button" class="btn btn-dark">Заказать</button>
+                                    </td>
+                                  </tr> 
+                            </tfoot>
+                        </table>
+                    </div>
+
+                    <div class="mb-5 book">
+                        <img src="./img/2razmera_books_preview_1200_c.png" alt="Обложки книг">
+                    </div>
+
+                    <div class="w-100 mb-5 services">
+                        <h3 class="text-center text-uppercase mb-4 novelty__title">Пакеты услуг</h3>
+
+                        <ul class="list-unstyled d-flex flex-wrap justify-content-lg-between justify-content-center pl-5 pr-5 services__list">
+                            <li class="mb-xl-0 mb-4 services__item">
+                                <div class="card">
+                                    <div class="card-body pl-5 pr-5 pt-4 pb-4">
+                                        <h5 class="card-title text-center mb-1">Пакет</h5>
+                                        <h4 class="card-title text-center mb-4">&laquoПопробовать&raquo</h4>
+                                        <p class="card-text mb-4">
+                                            Срок<br>
+                                            <span class="font-weight-bold">в пределах 24 часов</span>
+                                        </p>
+
+                                        <p class="card-text mb-4">
+                                            Вопросв/комплектов на оценку<br>
+                                            <span class="font-weight-bold">5 ваших луков или 5 вопросов</span>
+                                        </p>
+
+                                        <p class="mb-2 text-center position-relative card--reset">890&#8381;</p>
+                                        <p class="mb-4 text-center">499&#8381;</p>
+
+                                        <button type="button" class="btn btn-danger btn-block">Заказать</button>
+                                    </div>                                    
+                                </div>
+                            </li>
+                            <li class="mb-xl-0 mb-4 mb services__item">
+                                <div class="card">
+                                    <div class="card-body pl-5 pr-5 pt-4 pb-4">
+                                        <h5 class="card-title text-center mb-1">Пакет</h5>
+                                        <h4 class="card-title text-center mb-4">&laquoПопробовать&raquo</h4>
+                                        <p class="card-text mb-4">
+                                            Срок<br>
+                                            <span class="font-weight-bold">в пределах 24 часов</span>
+                                        </p>
+
+                                        <p class="card-text mb-4">
+                                            Вопросв/комплектов на оценку<br>
+                                            <span class="font-weight-bold">5 ваших луков или 5 вопросов</span>
+                                        </p>
+
+                                        <p class="mb-2 text-center position-relative card--reset">890&#8381;</p>
+                                        <p class="mb-4 text-center">499&#8381;</p>
+
+                                        <button type="button" class="btn btn-danger btn-block">Заказать</button>
+                                    </div>                                    
+                                </div>
+                            </li>
+                            <li class="services__item">
+                                <div class="card">
+                                    <div class="card-body pl-5 pr-5 pt-4 pb-4">
+                                        <h5 class="card-title text-center mb-1">Пакет</h5>
+                                        <h4 class="card-title text-center mb-4">&laquoПопробовать&raquo</h4>
+                                        <p class="card-text mb-4">
+                                            Срок<br>
+                                            <span class="font-weight-bold">в пределах 24 часов</span>
+                                        </p>
+
+                                        <p class="card-text mb-4">
+                                            Вопросв/комплектов на оценку<br>
+                                            <span class="font-weight-bold">5 ваших луков или 5 вопросов</span>
+                                        </p>
+
+                                        <p class="mb-2 text-center position-relative card--reset">890&#8381;</p>
+                                        <p class="mb-4 text-center">499&#8381;</p>
+
+                                        <button type="button" class="btn btn-danger btn-block">Заказать</button>
+                                    </div>                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="w-100 text-left mb-5 gallery">
+                        <h2 class="text-uppercase mb-4 novelty__title">Как все происходит</h2>
+
+                        <ul class="list-unstyled d-flex flex-column">
+                            <li class="d-flex align-items-center mb-5" >
+                                <img
+                                    data-fancybox
+                                    class="mr-5 gallery__img"
+                                    src="./img/first-class-stylish-help-chat-1.jpg"
+                                    alt=""
+                                />
+
+                                <p class="gallery__desr">Клиентка просит стилиста помочь выбрать одну из курток милитари</p>
+                            </li>
+
+                            <li class="d-flex align-items-center mb-5" >
+                                <img
+                                    data-fancybox
+                                    class="mr-5 gallery__img"
+                                    src="./img/first-class-stylish-help-chat-2.jpg"
+                                    alt=""
+                                />
+
+                                <p class="gallery__desr">Стилист запрашивает дополнительные фотографии  для того, чтобы выбор был на 100% удачным</p>
+                            </li>
+
+                            <li class="d-flex align-items-center mb-5" >
+                                <img
+                                    data-fancybox
+                                    class="mr-5 gallery__img"
+                                    src="./img/first-class-stylish-help-chat-3.jpg"
+                                    alt=""
+                                />
+
+                                <p class="gallery__desr">Стилист анализирует вещи с учетом уже имеющихся вещей клиентки и помогает сделать правильный выбор</p>
+                            </li>
+
+                            <li class="d-flex align-items-center mb-5" >
+                                <img
+                                    data-fancybox
+                                    class="mr-5 gallery__img"
+                                    src="./img/first-class-stylish-help-chat-4.jpg"
+                                    alt=""
+                                />
+
+                                <p class="gallery__desr">Благодарная клиентка делится впечатлениями от полученной услуги и радостью удачных покупок</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container text-center">
+            <a href="#up" class="btn btn-outline-light rounded-0 mt-5">Наверх^</a>
+        </div>        
+    </main>
+    
+    <footer class="pt-5 pb-5">
+        <div class="container">
+            <ul class="nav flex-column w-50">
+                <li class="nav-item">
+                  <a class="nav-link pl-0 text-light" href="#">Вакансии</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0 text-light" href="#">Карта сайта</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0 text-light" href="#">Политика приватности</a>
+                </li>
+                <li class="nav-item">
+                    <p class="text-light">Перепечатка разрешена только с активной ссылкой на нас</p>
+                </li>
+                <li class="nav-item">
+                    <p class="text-light">&copy;Glamurnenko.ru, 2005-2019 Тел.: 
+                        <a class="text-light" href="tel:+78007000513">8(800)700-05-13;</a>
+                        <a class="text-light" href="tel:+74992335">+7(499)350-23-35</a>
+                    </p>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link pl-0 text-light" href="mailto: support@glamurnenko.ru">Email: support@glamurnenko.ru</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

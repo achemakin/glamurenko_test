@@ -1,0 +1,85 @@
+.novelty__wrapper {
+    background-color: var(--color-white);
+    overflow: hidden;
+    color: var(--color-black);
+}
+
+.novelty__wrapper::before {
+    content: "Новинка";
+    position: absolute;
+    padding: 2px 100px;
+    transform: rotate(-45deg);
+    top: 12px;
+    left: -100px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .novelty__wrapper::before {
+        top: 50px;
+        left: -65px;
+    }
+}
+
+.novelty__title {
+    font-family: "Oranienbaum";
+}
+
+.novelty__description {
+    max-width: 800px;
+}
+
+.goes {
+    max-width: 600px;
+}
+
+.sign-now {
+    overflow-y: auto;
+}
+
+.sign-now th {
+    font-size: 20px;
+}
+.sign-now span {
+    font-size: 20px;
+}
+
+.services__item {
+    width: 304px;
+}
+
+.card {
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0, 0.9);
+}
+
+.card--reset::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%) rotate(-10deg);
+}
+
+.gallery {
+    max-width: 600px;
+}
+
+.gallery__img {
+    width: 190px;
+    cursor: pointer;
+}
+
+.gallery__desr {
+    font-size: 25px;
+    opacity: 0.75;
+}
+

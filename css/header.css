@@ -1,0 +1,61 @@
+.header {
+  width: 100%;
+  padding-top: 50px;
+  background-color: var(--color-black);
+  z-index: 100;
+  transition: top 0.3s ease-in-out;
+}
+
+.header--fixed {
+  position: fixed;
+  left: 0;
+  top: -84px;
+}
+
+.header--fixed-down {
+  top: -50px;
+}
+
+.nav .nav__item .nav__link {
+  color: var(--color-white);
+  font-family: "Oranienbaum";
+}
+
+.social__item {
+  width: 24px;
+  height: 24px;
+}
+
+.social__link {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-position: 0 -25px;
+}
+
+.social__link--instagram {
+  background-image: url("../img/1438557260_inst_4.png");
+}
+
+.social__link--fb {
+  background-image: url("../img/1438557245_ab_4.png");
+}
+
+.social__link--vk {
+  background-image: url("../img/1438423986_vk_3.png");
+}
+
+.phones__link {
+  font-size: 10px;
+  color: var(--color-white); 
+}
+
+.phones__link:hover {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.75;
+}
+

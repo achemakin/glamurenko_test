@@ -1,0 +1,16 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url("../img/bg-main.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero__mission {
+    font-family: "Oranienbaum";
+}
+
+.hero__descr {
+    font-family: "Oranienbaum";
+    color: var(--color-brown);
+}
